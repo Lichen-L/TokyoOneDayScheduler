@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".chooseSportToAdd"
+    tools:showIn="@layout/activity_choose_sport_to_add">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/buttonSwimming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="10dp"
+            android:background="@color/white"
+            android:drawableTop="@drawable/swimming"
+            android:text="@string/swimming" />
+
+        <Button
+            android:id="@+id/buttonBasketball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="10dp"
+            android:background="@color/white"
+            android:drawableTop="@drawable/basketball"
+            android:text="@string/basketball" />
+
+        <Button
+            android:id="@+id/buttonJudo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="10dp"
+            android:background="@color/white"
+            android:drawableTop="@drawable/judo"
+            android:text="@string/judo" />
+
+        <Button
+            android:id="@+id/buttonBadminton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"
+            android:elevation="10dp"
+            android:drawableTop="@drawable/badminton"
+            android:text="@string/badminton" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

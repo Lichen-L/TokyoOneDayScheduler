@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hfad.olympicschedule">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chooseCalender" />
+        <activity
+            android:name=".timeLine"
+            android:label="@string/title_activity_time_line"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chooseSportToAdd"
+            android:label="@string/title_activity_choose_sport_to_add"
+            android:parentActivityName=".timeLine"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hfad.olympicschedule.timeLine" />
+        </activity>
+        <activity
+            android:name=".chooseGame"
+            android:label="@string/title_activity_choose_game"
+            android:parentActivityName=".chooseSportToAdd"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hfad.olympicschedule.chooseSportToAdd" />
+        </activity>
+    </application>
+
+</manifest>
